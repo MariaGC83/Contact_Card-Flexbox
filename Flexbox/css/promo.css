@@ -1,0 +1,37 @@
+/* PROMO */
+
+.promo {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #e8f6fc;
+}
+
+.promo__container {
+  display: flex;
+}
+
+.promo__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31.25em;
+  height: 22.375em;
+  margin-right: 2.313rem;
+  background-color: #666;
+  color: #fff;
+}
+
+.promo__body {
+  width: 18.125rem;
+}
+
+.promo__heading {
+  margin-bottom: 0.625rem;
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
+.promo__form {
+  margin-top: 37px;
+}

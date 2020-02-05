@@ -1,0 +1,47 @@
+/*BUTTON */
+
+.btn { /* se tendrá que pintar igual que el campo input. ESTO ME VALDRÁ PARA EL TAG BUTTON Y EL TAG a */
+display: inline-flex;/*centra el texto de la caja */
+align-items: center;
+justify-content: center;/*alinea los botones */
+min-width: 7.438rem;
+height: 2.5rem;
+border: 0;
+border-radius: 3px;
+padding: 5px 15px; /*el tamaño del texto dentro del botón */
+background-color: #eee;
+color: #333;
+font-family: "Roboto Slab", serif;
+font-size: 1rem;
+font-weight: 700; /*grosor de la letra predefinido en style*/
+line-height: normal;
+text-align: center; /*no tiene efecto sobre un elemnto flexible */
+text-decoration: none;
+cursor: pointer; /*si estas con el mvl no aparece cursor mano */
+flex-grow: 1; /* hace que los botones se expandan y afecta porque el padre es DISPLAY FLEX, si no habría que aplicar un modificador */
+}
+
+
+.btn + .btn {
+    margin-left: 1rem;
+}
+
+.btn--success {
+    background-color: #73bf19;
+    color: #fff;
+}
+
+.btn--sm {
+    min-width: 0;/*no existe ancho mx del botón */
+    height: 2rem;/*hace que la letra quede contenida; al poner widht*/
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 0.813rem;/*tamaño del texto dentro del botón */
+}
+
+@media (min-width: 768px) {
+
+    .btn {
+        flex-grow: 0;
+    }
+}

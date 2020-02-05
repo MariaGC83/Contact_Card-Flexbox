@@ -1,0 +1,61 @@
+/*FORM */
+
+.form__group {
+    margin-bottom: 1rem;
+}
+
+.form__label {
+    font-size: 1.25rem;
+}
+
+.form__control { /* solo es el el campo, el control de formulario */
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    /*con margin-bottom: 1rem ;está aplicado al campo no al botón en sí. Por eso se lo eliminamos para aplicárselo al form__group */
+    padding: 3px 11px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25rem;
+}
+
+.form__actions {
+    margin-top: 2.5rem;
+    display: flex; /*combinado con la parte del BOTÓN lo hace expandible */
+}
+
+@media (min-width: 768px) {
+/*body {
+    background: rgb(194, 243, 194);
+}*/
+.form__container{
+    height: 245px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.form__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 69px;
+}
+.form__group--ml {
+    margin-left: 20px;
+    margin-right: 81px;
+  }
+  .form__group--s {
+    width: 168px;
+    height: 40px; 
+  }
+  .form__group--l { 
+    width: 427px;
+  }
+
+
+}
+
+

@@ -1,0 +1,10 @@
+/* SIDE-HEADER */
+
+  /* position: fixed; */
+  .side-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #4c7cb5;
+  position: relative;
+}

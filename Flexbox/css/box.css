@@ -1,0 +1,32 @@
+/*BLOCK */
+
+* {
+    box-sizing: border-box;
+
+}
+
+.box {
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    width: 170px;
+    height: 223px;
+    background-color: #ddd;
+}
+
+.box + .box {
+    margin-left: 30px;
+}
+
+.box:nth-child(7n) { /* esto solo vale para no responsive porque al reducir la pag se reduciría la distancia entre bloques */
+    margin-left: 0;
+}
+
+.box:nth-child(6n+7) { /* a partir del 7 elemento aplica el margin left, cada 6 elementos haz lo mismo; el 6 es el que se queda abajo*/
+    margin-left: 0;
+}
+
+
+.box-big {
+
+
+}

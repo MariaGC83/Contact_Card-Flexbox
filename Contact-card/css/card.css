@@ -1,0 +1,38 @@
+/*CARD */
+/*viendo como posicionar una modal */
+
+.card {
+    /* position: fixed; *//*lo posicionas según unas coordenadas; fixed o absolute limita su contenido. No valdría para tablet ni escritorio para ellos POSITION STATIC */
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+   background-color: #fff;
+   overflow: auto;
+}
+/*supongamos que el mvl es más apequeño y tengo más contenido; se aplicaría OVERFLOW: AUTO */
+
+.card__icon { /*estas propiedadees alinean el icono */
+    display: flex;
+    justify-content: center; /*eje HORIZONTAL*/
+    align-items: center; /*eje vertical; align content es si tienes varios elemntos flex y los mueves dentro del contenedor. Si SOLO tienes UNA SOLA FILA ES ALIGN ITEMS*/
+    background-color: #f8f8f8;
+    height: 6.75rem;
+}
+@media (min-width: 768px) {
+    .card {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        overflow: auto;
+    }
+    .card__icon {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f8f8f8;
+        height: 6.25rem;
+    }
+ }
